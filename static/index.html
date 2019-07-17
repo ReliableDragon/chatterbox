@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>Chatterbox</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <!--
+  Flask automatically makes files in the 'static' directory available via
+  '/static'.
+  -->
+  <!-- <link rel="stylesheet" type="text/css" href="/static/main.css"> -->
+</head>
+<body>
+  <template id="tmpl">
+    <div class="message"></div>
+  </template>
+  <div class="container">
+  <div class="messages">
+  </div>
+  <form action="" id="jsonform" method="POST">
+    <label for="message">Message: </label>
+    <input id="message" name="message" type="text" />
+    <input id="submission" type="submit" value="Send!" />
+  </form>
+  </div>
+</body>
+</html>
